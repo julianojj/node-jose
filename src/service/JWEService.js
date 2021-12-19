@@ -1,5 +1,4 @@
-const { JWK } = require('node-jose')
-const { JWE } = require('node-jose')
+const { JWE, JWK } = require('node-jose')
 
 const convertToKey = (key) => {
     return JWK.asKey(key, 'json')
